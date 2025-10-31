@@ -1,0 +1,64 @@
+/* assets/style.css */
+body, .stApp {
+    background-color: #f4faff;
+}
+
+.block-container {
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1300px;
+}
+
+h1 {
+    color: #005b96;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+h2, h3 {
+    color: #0074cc;
+    margin-bottom: 0.4rem;
+}
+
+div[data-testid="stNumberInput"], div[data-testid="stTextInput"], div[data-testid="stDateInput"], div[data-testid="stSelectbox"], div[data-testid="stCheckbox"] {
+    margin-bottom: 0.6rem;
+}
+
+button[kind="primary"] {
+    background-color: #0074cc !important;
+    color: white !important;
+    border-radius: 8px;
+    border: none;
+    padding: 0.35rem 0.8rem !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+}
+button[kind="primary"]:hover {
+    background-color: #000000 !important;
+}
+
+[data-testid="stMetric"] {
+    background-color: #e7f1fb;
+    border-radius: 10px;
+    padding: 0.4rem;
+    border: 1px solid #b6d4f0;
+}
+div[data-testid="stMetricValue"] {
+    color: #005b96;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.stSuccess {
+    background-color: #e6f4ea !important;
+    border-left: 5px solid #3c9d3c !important;
+}
+.stInfo {
+    background-color: #e7f1fb !important;
+    border-left: 5px solid #0074cc !important;
+}
+
+hr {
+    margin: 0.4rem 0 !important;
+}
