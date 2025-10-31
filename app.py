@@ -1,4 +1,3 @@
-# app.py
 import streamlit as st
 from datetime import datetime
 from src.calculator import calcular_tabletas, calcular_ampollas
@@ -67,3 +66,4 @@ with col_result:
         st.caption("📆 Distribución mensual:")
         st.info(f"**Este mes:** {resultados['Ampollas este mes']} ampollas ({resultados['Volumen este mes (ml)']} ml)")
         st.info(f"**Próximo mes:** {resultados['Ampollas próximo mes']} ampollas ({resultados['Volumen próximo mes (ml)']} ml)")
+
