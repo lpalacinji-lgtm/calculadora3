@@ -1,16 +1,16 @@
 import streamlit as st
 from datetime import datetime
 from src.calculator import calcular_tabletas, calcular_ampollas
-
-# Cargar CSS
-with open("assets/style.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
 st.set_page_config(
     page_title="Calculadora de Medicamentos 💊",
     layout="wide",
     page_icon="💉"
 )
+# Cargar CSS
+with open("assets/style.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+
 
 st.title("💊 Calculadora de Dispensación Médica")
 #st.caption("Sistema Profesional — Optimizado para Farmacias y Áreas Clínicas")
@@ -66,4 +66,5 @@ with col_result:
         st.caption("📆 Distribución mensual:")
         st.info(f"**Este mes:** {resultados['Ampollas este mes']} ampollas ({resultados['Volumen este mes (ml)']} ml)")
         st.info(f"**Próximo mes:** {resultados['Ampollas próximo mes']} ampollas ({resultados['Volumen próximo mes (ml)']} ml)")
+
 
